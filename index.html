@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- MY CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- IMPORTING FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Chris | My Portfolio</title>
+</head>
+<body>
+    <div id="container">
+        <nav id="navbar">
+            <img src="my-logo-4.png" alt="" id="logo">
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fa fa-bars"></i>
+                <i class="fa fa-close"></i>
+            </label>
+            <ul id="nav-ul">
+                <li><a href="#">Home</a></li>
+                <li><a href="#projects-wrapper">Projects</a></li>
+                <li><a href="#about-me-wrapper">About</a></li>
+                <li><a href="#services-wrapper">Services</a></li>
+                <li><a href="#contact-wrapper">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- <video src="video-bg.mp4" autoplay muted loop>
+            Your browser does not support HTML5 video.
+        </video> -->
+
+        <div id="welcome-section" class="section">
+            <div id="welcome-section-wrapper">
+                <div id="welcome-message">
+                    <h1>HI!</h1>
+                    <h3>I am Chris <span>Mar</span>.</h3>
+                    <h4>I am a <span>Programmer</span>!</h4>
+                    <a id="profile-link" href="https://www.freecodecamp.org/ChrisMar" target="_blank">Know More About Me<i class="fa fa-angle-down"></i></a>
+                </div>
+                <div id="profile-picture">
+                    <img src="https://images.ctfassets.net/3m6gg2lxde82/4vV8v5PVtQXnRY9z8q1vpq/b99ac058bc28a7aacd05a3a479c8692a/AndrewGarfieldGettyImages-1382097153.jpg.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div id="projects-wrapper" class="section">
+            <h2 id="projects-title" class="header-title">My Projects</h2>
+            <div id="projects">
+                <div class="project-tile">
+                    <a href="https://codepen.io/cmbkitane/pen/bGLddOL" target="_blank">
+                        <figure>
+                            <div id="img-overlay"></div>
+                            <img src="images/project-1.jpg" alt="">
+                            <figcaption>Family Tribute</figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class="project-tile">
+                    <a href="https://codepen.io/cmbkitane/pen/OJQVRYy" target="_blank">
+                        <figure>
+                            <div id="img-overlay"></div>
+                            <img src="images/project-2.jpg" alt="">
+                            <figcaption>Survey Form</figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class="project-tile">
+                    <a href="https://codepen.io/cmbkitane/pen/ExQjqWX" target="_blank">
+                        <figure>
+                            <div id="img-overlay"></div>
+                            <img src="images/project-3.jpg" alt="">
+                            <figcaption>Product Landing Page</figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class="project-tile">
+                    <a href="https://codepen.io/cmbkitane/pen/zYRvavR" target="_blank">
+                        <figure>
+                            <div id="img-overlay"></div>
+                            <img src="images/project-4.jpg" alt="">
+                            <figcaption>Documentation</figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class="project-tile">
+                    <a href="https://cbkitane.github.io/DOM-pig-game/" target="_blank">
+                        <figure>
+                            <div id="img-overlay"></div>
+                            <img src="images/project-5.jpg" alt="">
+                            <figcaption>DOM Pig Game</figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class="project-tile">
+                    <div id="img-overlay"></div>
+                    <a href="https://cbkitane.github.io/Dino-game/" target="_blank">
+                        <figure>
+                            <div id="img-overlay"></div>
+                            <img src="images/project-6.jpg" alt="">
+                            <figcaption>Dinosaur Game</figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="about-me-wrapper" class="section">
+            <h2 id="about-me-title" class="header-title">About Me</h2>
+            <div class="about-me">
+                <div class="column left">
+                    <img src="https://www.wallpaperflare.com/static/954/93/147/andrew-garfield-actor-face-beard-wallpaper.jpg" alt="">
+                </div>
+                <div class="column right">
+                    <h3>My name is <span>Chris Mar</span>.</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor blanditiis id corrupti saepe sit sunt culpa necessitatibus voluptatibus et aut, pariatur exercitationem facilis? Nisi odit dolore harum quaerat? Eaque, earum.</p>
+                    <button>Download CV</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="services-wrapper" class="section">
+            <h2 id="services-title" class="header-title">Services</h2>
+            <div class="services">
+                <div class="card">
+                    <div class="box">
+                        <i class="fa fa-code"></i>
+                        <h3>Web Design</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, iusto?</p>
+                    </div>
+                    <div class="box">
+                        <i class='fa fa-line-chart'></i>
+                        <h3>Advertising</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, iusto?</p>
+                    </div>
+                    <div class="box">
+                        <i class='fa fa-picture-o'></i>
+                        <h3>Photo Editting</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, iusto?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact-wrapper" class="section">
+            <h2 id="contact-title" class="header-title">Contact Me</h2>
+            <div class="contacts">
+                <div class="number-email">
+                    <div class="contact">
+                        <i class="fa fa-phone"></i>
+                        <h3>0916-xxx-xxxx</h3>
+                    </div>
+                    <div class="contact">
+                        <i class="	fa fa-envelope-o"></i>
+                        <h3>cmbk.xxx@gmail.com</h3>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <h3>Contact me on my social media:</h3>
+                    <div class="apps">
+                        <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-official"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.reddit.com" target="_blank"><i class="fa fa-reddit-alien"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,511 @@
+/* Google Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@100&family=Roboto:wght@100&display=swap');
+
+/* Universal */
+* {
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.section {
+    padding-top: 100px;
+}
+
+#check {
+    display: none;
+}
+
+.header-title {
+    border-bottom: 1px solid white;
+    width: 30%;
+    margin: 10px auto;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+label .fa {
+    font-size: 40px;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+}
+
+/* Container */
+#container {
+    width: 100%;
+    height: 100%;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(220, 20, 60, .85);
+    border-bottom: 1px solid rgba(0,0,0,.7);
+    backdrop-filter: blur(20px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+#navbar #logo {
+    width: 120px;
+    cursor: pointer;
+    position: relative;
+}
+
+#navbar ul {
+    display: flex;
+    position: relative;
+    transition: .5s linear;
+}
+
+#navbar li {
+    list-style: none;
+    display: inline;
+    margin: 0 10px;
+    padding: 10px;
+    transition: .5s linear;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+}
+
+
+#navbar li::after { 
+    content: "";
+    width: 0%;
+    transition: .3s linear;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-top: 10px;
+}
+
+#navbar li:hover::after{
+    content: "";
+    width: 100%;
+    border-bottom: 2px solid rgba(255, 255, 255, .5);
+}
+
+#navbar a {
+    font-weight: 1000;
+    font-size: 16px;
+    color: rgb(212, 208, 208);
+}
+
+#navbar a:hover {
+    color: rgba(212, 239, 35, 0.6);
+}
+
+#welcome-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(https://wallpaperaccess.com/full/5651989.jpg);
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+}
+
+#welcome-section-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(34, 34, 34, 0.2);
+}
+
+#welcome-message {
+    width: 50%;
+    padding: 50px;
+    color: #fff;
+    background-color: rgba(34, 34, 34, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 5px rgba(255,255,255,.2);
+    /* margin-left: 20em; */
+}
+#welcome-message h1 {
+    font-size: 60px;
+}
+
+#welcome-message h3 {
+    font-size: 66px;
+}
+#welcome-message span {
+    color: crimson;
+}
+
+#welcome-message h4 {
+    font-size: 63px;
+    margin-bottom: 20px;
+}
+
+#profile-picture {
+    width: 400px;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+#profile-picture img {
+    width: 100%;
+    max-height: 100vh;
+}
+
+#profile-link {
+    padding: 5px;
+    min-width: 150px;
+    margin-top: 30px;
+    font-weight: 1000;
+    font-size: 18px;
+    color: rgba(255,255,255,.5);
+}
+
+.fa-angle-down {
+    margin-left: 10px;
+}
+
+#profile-link:hover {
+    color:rgb(190, 194, 77);
+}
+
+/* Projects Section */
+#projects-wrapper {
+    text-align: center;
+}
+
+#projects {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.project-tile {
+    margin: 30px;
+    position: relative;
+}
+
+.project-tile img {
+    width: 300px;
+    height: 200px;
+    transition: .1s linear;
+}
+.project-tile figcaption {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,1));
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s linear;
+}
+
+.project-tile:hover figcaption{
+    height: 70%;
+}
+
+
+
+/* About Me section */
+
+#about-me-wrapper {
+    width: 100%;
+}
+
+.about-me {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+#about-me-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about-me .left {
+    width: 45%;
+}
+
+.about-me img {
+    width: 90%;
+}
+
+
+.about-me .right {
+    width: 55%;
+}
+.about-me .right h3 {
+    font-size: 55px;
+}
+.about-me .right span {
+    color: crimson;
+}
+.about-me .right p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+.about-me .right button {
+    margin-top: 10px;
+    padding: 7px;
+    color: black;
+    cursor: pointer;
+    background-color: rgb(80, 220, 41);
+    font-size: 15px;
+    font-weight: 1000;
+}
+.about-me .right button:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+
+/* Services Section */
+.services .card {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.services .card .box{
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    background-color: rgba(255,255,255,.2);
+    backdrop-filter: blur(20px);
+    border-radius: 2px;
+    padding: 15px;
+}
+
+.services .card .fa {
+    font-size: 70px;
+    color: crimson
+}
+
+.services .card .box h3 {
+    font-size: 23px;
+    margin: 10px;
+}
+.services .card .box p {
+    font-size: 20px;
+}
+
+/* Contact */
+.contacts {
+    width: 50%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact .fa {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.apps {
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+.apps .fa {
+    font-size: 35px;
+    margin: 10px;
+    transition: .2s linear;
+}
+
+.apps .fa:hover {
+    transform: scale(1.2);
+    color: crimson;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 1350px){
+    #welcome-message h1 {
+        font-size: 50px;
+    }
+    
+    #welcome-message h3 {
+        font-size: 56px;
+    }
+    
+    #welcome-message h4 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    #profile-picture {
+        width: 350px;
+    }
+    
+}
+
+@media (max-width: 1250px){
+    #welcome-message h1 {
+        font-size: 40px;
+    }
+    
+    #welcome-message h3 {
+        font-size: 46px;
+    }
+    
+    #welcome-message h4 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    #profile-picture {
+        width: 300px;
+    }
+    .about-me .right h3 {
+        font-size: 40px;
+    }
+    .card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1100px){
+    #welcome-message h1 {
+        font-size: 30px;
+    }
+    
+    #welcome-message h3 {
+        font-size: 36px;
+    }
+    
+    #welcome-message h4 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    #profile-picture {
+        width: 250px;
+    }
+    #welcome-section-wrapper {
+        padding: 0px;
+    }
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-me .left {
+        width: 90%;
+    }
+    .about-me .left img {
+        display: block;
+        margin: auto;
+    }
+    .about-me .right {
+        margin-top: 10px;
+        width: 80%;
+    }
+    .about-me .right h3 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .contacts {
+        width: 80%;
+    }
+}
+
+@media (max-width: 800px){
+    #navbar {
+        flex-direction: column;
+    }
+    #navbar ul {
+        margin-top: 20px;
+        background-color: rgba(0,0,0,.8);
+        width: 100%;
+        display: none;
+    }
+    #navbar ul li {
+        line-height: 30px;
+    }
+    label .fa-bars {
+        display: block;
+    }
+    #check:checked ~ label .fa-bars {
+        display: none;
+    }
+    #check:checked ~ label .fa-close {
+        display: block;
+    }
+    #check:checked ~ #nav-ul {
+        display: block;
+    }
+    #profile-picture {
+        display: none;
+    }
+    .about-me .right h3 {
+        font-size: 30px;
+    }
+    #welcome-message {
+        padding: 5px;
+    }
+    #welcome-message h1 {
+        font-size: 25px;
+    }
+    #welcome-message h3 {
+        font-size: 25px;
+    }
+    #welcome-message h4 {
+        font-size: 25px;
+    }
+    .contacts {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacts .social-media {
+        margin-top: 40px;
+    }
+    .contacts .social-media .apps{
+        justify-content: space-between;
+
+    }
+}
