@@ -11,6 +11,12 @@
     color: #fff;
 }
 
+/* Added comment */
+
+.test-class {
+    background-color: red;
+}
+
 .section {
     padding-top: 100px;
 }
